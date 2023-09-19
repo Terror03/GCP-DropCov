@@ -86,6 +86,7 @@ mpirun --allow-run-as-root -n 4 --output-filename log_output --merge-stderr-to-s
 ```
 ## Citation
 
+```
 @inproceedings{wang2023TPAMI,
   title={Towards A Deeper Understanding of Global Covariance Pooling in Deep Learning: An Optimization Perspective},
   author={Qilong Wang1, Li Zhang, Banggu Wu, Dongwei Ren, Peihua Li, Wangmeng Zuo, Qinghua Hu},
@@ -93,6 +94,6 @@ mpirun --allow-run-as-root -n 4 --output-filename log_output --merge-stderr-to-s
   pages={ },
   year={2023}
 }
-
+```
 ## Acknowledgement
 The work was sponsored by National Natural Science Foundation of China (Grant No.s 62276186, 61925602, 61971086 and 61732011) and CCF-Baidu Open Fund (NO.2021PP15002000).
