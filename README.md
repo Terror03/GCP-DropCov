@@ -13,8 +13,15 @@ Exploration of three new benefits of GCP for deep architectures that have not be
 ## Main Results
 |Method           | Acc@1(%) | #Params.(M) | FLOPs(G) | Checkpoint                                                          |
 | ------------------ | ----- | ------- | ----- | ------------------------------------------------------------ |
+| ResNet-18   |  70.53 |  11.7   |   1.81  |               |
+| ResNet-18+DropCov(Ours)   | 73.8  |   19.6  |  3.11   |[Download](https://drive.google.com/file/d/1zVDDmmQWQ-CDDoxjaolkcjI3MACE-rxx/view?usp=drive_link)|
+| ResNet-18+ISqrt(Ours)   | 72.25  |   19.6  |  3.11   |[Download](https://drive.google.com/file/d/1SJZz-d3l3fUrdRzrY9iLZZPEknfroh3E/view?usp=drive_link)|
+| ResNet-34   |  73.68 |  21.8   |   3.66  |               |
+| ResNet-34+DropCov(Ours)   | 76.13  |   29.7  |  5.56   |[Download](https://drive.google.com/file/d/1-gvogrLlRSnpzigvevLPV1GKAHF0vr2K/view?usp=drive_link)|
+| ResNet-34+ISqrt(Ours)   |   |     |     |[Download]()|
 | ResNet-50   |  76.07 |  25.6   |   3.86  |               |
-|    | 0  |   0  |  0   | |
+| ResNet-50+DropCov(Ours)   | 77.77  |   32.0  |  6.19   |[Download](https://drive.google.com/file/d/1PBy8evHi-xiJHiTWgqrUs8jTH58hJM2n/view?usp=share_link)|
+| ResNet-50+ISqrt(Ours)   |   |     |     |[Download]()|
 
 ## Usage
 
