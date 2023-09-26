@@ -10,6 +10,14 @@ Exploration of three new benefits of GCP for deep architectures that have not be
 ![GCP-DropCov](https://github.com/Terror03/GCP-DropCov/assets/45889633/5b80b7a8-0b9f-4ed9-ad44-8c1f35653f15))
 ![GCP-DropCov2](https://github.com/Terror03/GCP-DropCov/assets/45889633/f98c4c3c-383e-4987-b862-217bf92aa4b8)
 
+## Abstract
+Global covariance pooling (GCP) as an effective alternative to global average pooling has shown good capacity to improve deep convolutional neural networks (CNNs) in a variety of vision tasks. Although promising performance, it is still an open problem on how GCP (especially its post-normalization) works in deep learning. In this paper, we make the effort towards understanding the effect of GCP on deep learning from an optimization perspective. Specifically, we first analyze behavior of GCP with matrix power normalization on optimization loss and gradient computation of deep architectures. Our findings show that GCP can improve Lipschitzness of optimization loss and achieve flatter local minima, while improving gradient predictiveness and functioning as a special pre-conditioner on gradients. Then, we explore the effect of post-normalization on GCP from the model optimization perspective, which encourages us to propose a simple yet effective normalization, namely DropCov. Based on above findings, we point out several merits of deep GCP that have not been recognized previously or fully explored, including faster convergence, stronger model robustness and better generalization across tasks. Extensive experimental results using both CNNs and vision transformers on diversified vision tasks provide strong support to our findings while verifying the effectiveness of our method.
+
+## References
+[GCP_CVPR2020]Wang, Qilong, Li Zhang, Banggu Wu, Dongwei Ren, Peihua Li, Wangmeng Zuo, and Qinghua Hu. "What deep CNNs benefit from global covariance pooling: An optimization perspective." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR), pp. 10771-10780. 2020.
+[DropCov_NIPS2022]Wang, Qilong, Mingze Gao, Zhaolin Zhang, Jiangtao Xie, Peihua Li, and Qinghua Hu. "DropCov: a simple yet effective method for improving deep architectures." Advances in Neural Information Processing Systems 35 (NIPS): 33576-33588. 2022.
+[ISqrt_CVPR2018]Li, Peihua, Jiangtao Xie, Qilong Wang, and Zilin Gao. "Towards faster training of global covariance pooling networks by iterative matrix square root normalization." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR), pp. 947-955. 2018.
+
 ## Main Results
 |Method           | Acc@1(%) | #Params.(M) | FLOPs(G) | Checkpoint                                                          |
 | ------------------ | ----- | ------- | ----- | ------------------------------------------------------------ |
@@ -103,4 +111,4 @@ mpirun --allow-run-as-root -n 4 --output-filename log_output --merge-stderr-to-s
 }
 ```
 ## Acknowledgement
-The work was sponsored by National Natural Science Foundation of China (Grant No.s 62276186, 61925602, 61971086 and 61732011) and CCF-Baidu Open Fund (NO.2021PP15002000).
+The work was sponsored by National Natural Science Foundation of China (Grant No.s 62276186, 61925602, 61971086 and 61732011) and CAAI-Huawei MindSpore Open Fund (CAAIXSJLJJ-2022-010C).
