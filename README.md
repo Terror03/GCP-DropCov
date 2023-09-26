@@ -15,7 +15,9 @@ Global covariance pooling (GCP) as an effective alternative to global average po
 
 ## References
 [GCP_CVPR2020]Wang, Qilong, Li Zhang, Banggu Wu, Dongwei Ren, Peihua Li, Wangmeng Zuo, and Qinghua Hu. "What deep CNNs benefit from global covariance pooling: An optimization perspective." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR), pp. 10771-10780. 2020.
+
 [DropCov_NIPS2022]Wang, Qilong, Mingze Gao, Zhaolin Zhang, Jiangtao Xie, Peihua Li, and Qinghua Hu. "DropCov: a simple yet effective method for improving deep architectures." Advances in Neural Information Processing Systems 35 (NIPS): 33576-33588. 2022.
+
 [ISqrt_CVPR2018]Li, Peihua, Jiangtao Xie, Qilong Wang, and Zilin Gao. "Towards faster training of global covariance pooling networks by iterative matrix square root normalization." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition(CVPR), pp. 947-955. 2018.
 
 ## Main Results
