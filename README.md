@@ -5,6 +5,18 @@ This is an code implementation base on Mindspore1.9 of TPAMI2023 paper (Towards 
 ## Introduction
 Global covariance pooling (GCP) as an effective alternative to global average pooling has shown good capacity to improve deep convolutional neural networks (CNNs) in a variety of vision tasks. Although promising performance, it is still an open problem on how GCP (especially its post-normalization) works in deep learning. In this paper, we make the effort towards understanding the effect of GCP on deep learning from an optimization perspective. Specifically, we first analyze behavior of GCP with matrix power normalization on optimization loss and gradient computation of deep architectures. Our findings show that GCP can improve Lipschitzness of optimization loss and achieve flatter local minima, while improving gradient predictiveness and functioning as a special pre-conditioner on gradients. Then, we explore the effect of post-normalization on GCP from the model optimization perspective, which encourages us to propose a simple yet effective normalization, namely DropCov. Based on above findings, we point out several merits of deep GCP that have not been recognized previously or fully explored, including faster convergence, stronger model robustness and better generalization across tasks. Extensive experimental results using both CNNs and vision transformers on diversified vision tasks provide strong support to our findings while verifying the effectiveness of our method.
 
+## Citation
+
+```
+@inproceedings{wang2023TPAMI,
+  title={Towards A Deeper Understanding of Global Covariance Pooling in Deep Learning: An Optimization Perspective},
+  author={Qilong Wang1, Li Zhang, Banggu Wu, Dongwei Ren, Peihua Li, Wangmeng Zuo, Qinghua Hu},
+  booktitle={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  pages={ },
+  year={2023}
+}
+```
+
 ## Usage
 
 ### Environments
@@ -72,17 +84,6 @@ For example:
 
 ```bash
 mpirun --allow-run-as-root -n 4 --output-filename log_output --merge-stderr-to-stdout python train.py  --config_path="./config/resnet50_imagenet2012_config.yaml" --run_distribute=True --device_num=4 --device_target="GPU" --data_path=./imagenet --output_path './output' &> log &
-```
-## Citation
-
-```
-@inproceedings{wang2023TPAMI,
-  title={Towards A Deeper Understanding of Global Covariance Pooling in Deep Learning: An Optimization Perspective},
-  author={Qilong Wang1, Li Zhang, Banggu Wu, Dongwei Ren, Peihua Li, Wangmeng Zuo, Qinghua Hu},
-  booktitle={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  pages={ },
-  year={2023}
-}
 ```
 
 ## Main Results
