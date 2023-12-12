@@ -8,13 +8,15 @@ Global covariance pooling (GCP) as an effective alternative to global average po
 ## Citation
 
 ```
-@inproceedings{wang2023TPAMI,
-  title={Towards A Deeper Understanding of Global Covariance Pooling in Deep Learning: An Optimization Perspective},
-  author={Qilong Wang1, Li Zhang, Banggu Wu, Dongwei Ren, Peihua Li, Wangmeng Zuo, Qinghua Hu},
-  booktitle={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  pages={ },
-  year={2023}
-}
+@ARTICLE{10269023,
+  author={Wang, Qilong and Zhang, Zhaolin and Gao, Mingze and Xie, Jiangtao and Zhu, Pengfei and Li, Peihua and Zuo, Wangmeng and Hu, Qinghua},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Towards a Deeper Understanding of Global Covariance Pooling in Deep Learning: An Optimization Perspective}, 
+  year={2023},
+  volume={45},
+  number={12},
+  pages={15802-15819},
+  doi={10.1109/TPAMI.2023.3321392}}
 ```
 
 ## Usage
